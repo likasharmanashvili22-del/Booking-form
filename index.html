@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+       <div class="formtext">
+         <h1>Book your seaside stay</h1>
+        <p>Pick your dates and room. You won't be charged until we confirm.</p>
+
+       </div>
+        <div class="dates">
+           <div class="date"> <label for="checkin">Check-in</label>
+            <input type="date" id="checkin" name="checkin" required></div>
+
+             <div class="date"><label for="checkout">Check-Out</label>
+            <input type="date" id="checkout" name="checkout" required></div>
+        </div>
+<p class="gp">Guests</p>
+        <div class="guests">
+           
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4+</button>
+        </div>
+
+        <div class="rooms">
+            <h3>Room type</h3>
+            <div class="card">
+                <div class="text">
+                    <h2>🌿</h2>
+                    <p>Garden room <span>Queen bed, patio, 28 m²</span></p>
+                </div>
+                <div class="price"><p>$120 <span>per night</span></p></div>
+            </div>
+        
+            <div class="card">
+                <div class="text">
+                    <h2>🌊</h2>
+                    <p>Sea view suite <span>King bed, balcony, 42 m²</span></p>
+                </div>
+                <div class="price"><p>$190 <span>per night</span></p></div>
+            </div>
+
+            <div class="card">
+                <div class="text">
+                    <h2>☀️</h2>
+                    <p>Rooftop loft<span>Two bedrooms, terrace, 75 m²²</span></p>
+                </div>
+                <div class="price"><p>$340 <span>per night</span></p></div>
+            </div>
+        </div>
+
+
+        <div class="infos">
+           <div class="info"> <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Alex Morgan" required></div>
+            
+          <div class="info">  <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Alex@example.com" required>
+</div>
+        </div>
+
+        <label for="arrival">Arrival time</label>
+
+<select id="arrival" name="arrival" required>
+    <option value="before-2">Before 2 pm</option>
+    <option value="2-6" selected>2 pm – 6 pm</option>
+    <option value="6-10">6 pm – 10 pm</option>
+    <option value="after-10">After 10 pm</option>
+</select>
+
+<button type="submit" class="submit">Request Booking</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+:root {
+    --deep: #06303d;
+    --sea: #0e7c86;
+    --foam: #e8f7f5;
+    --sun: #ffc83d;
+    --sun-dark: #f2ae00;
+    --text: #0b2a33;
+    --muted: #5d7a82;
+    --line: #cfe4e3;
+    --error: #d6336c;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--deep);
+    /*  */
+}
+
+.form{
+    background: white;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    
+    width: 600px;
+}
+
+
+
+.formtext h1{
+    color: var(--text);
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.formtext p{color: var(--muted);}
+
+.dates{
+    display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width:100%;
+}
+.dates input{
+    background: var(--foam);
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+     border: 3px solid transparent;
+}
+.date label{
+    color: var(--muted);
+}
+.dates input:focus {
+    border: 3px solid var(--line);
+}
+.guests{
+    background: var(--foam);
+    padding: 5px 20px;
+    width: 91%;
+    border-radius: 10px;
+    display: flex;
+}
+.gp{
+    color: var(--muted);
+    
+}
+.guests button{
+    padding: 15px;
+    border: none;
+    color: var(--sea);
+    background: transparent;
+    width: 50%;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.guests button:hover{
+    color: var(--deep);
+}
+
+.guests button:focus {
+    background: white;
+    box-shadow: 0 4px 12px -4px rgba(6, 48, 61, .3);
+}
+.rooms{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rooms h3{
+    color: var(--text);
+
+}
+.card{
+    border: 2px solid var(--line);
+    width: 95%;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+.text{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text h2{
+background: var(--foam);
+padding: 10px;
+border-radius: 20px;
+}
+.card .text p{
+    display: flex;
+    flex-direction: column;
+}
+
+.card .text p{
+    color: var(--text);
+}
+
+.card .text p span{
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.price p{
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 20px
+}
+
+.price p span{
+    font-weight: 300;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.card:hover{
+    background-color: var(--foam);
+}
+
+.info input{
+           background: var(--foam);
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+     border: 3px solid transparent;
+}
+.infos{
+     display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+.info{
+   display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width:100%;
+}
+.infos label{
+    color: var(--muted);
+}
+
+.form select{
+    background-color: var(--foam);
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.form .submit{
+    width: 100%;
+    background: var(--sun);
+     width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width: 868px){
+.form{
+    width: 90%;
+    padding: 20px 10px;
+    
+}
+
+.dates{
+    flex-direction: column;
+    width: 100%;
+}
+.date{
+    width: 100%;
+}
+
+.guests{
+    width: 90%;
+}
+
+.card{
+    width: 88%;
+}
+
+.infos{
+    flex-direction: column;
+}
+.form select{
+    width: 98%;
+}
+
+.form .submit{
+    width: 98%;
+}
+}
